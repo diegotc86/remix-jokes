@@ -2,9 +2,10 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "build": "prisma generate remix build",
+    "build": "remix build",
     "dev": "remix dev",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "postinstall": "prisma generate"
   },
   "prisma": {
     "seed": "ts-node --require tsconfig-paths/register prisma/seed.ts"
